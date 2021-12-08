@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	background-image: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+ul.nav li {
+  float: left;
+  display: inline-block;
+}
+
+ul.nav li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  font-family: Verdana,sans-serif;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: #3D3D3D;
+}
+
+ul.nav li.dropdown {
+  display: inline-block;
+}
+
+ul.nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3D3D3D;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+ul.nav .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+ul.nav .dropdown-content a:hover {
+	background-color: #626262;
+}
+
+ul.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ #header {
+  	padding: 5%;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: x-large;
+}
+
+#welcome {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}
+
+table.tools {
+	Border: 1px solid white;
+	border-collapse: collapse;
+	color: #E7E7E7;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Verdana, sans-serif;
+	width: 75%;
+}
+
+table.tools th {
+	background-color: #151515;
+	padding: 2%;
+	Border: 1px solid white;
+	border-collapse: collapse;
+	color: #E7E7E7;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Verdana, sans-serif;
+}
+
+table.tools td {
+	background-color: #2B2B2B;
+	padding: 2%;
+	Border: 1px solid white;
+	border-collapse: collapse;
+	color: #E7E7E7;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Verdana, sans-serif;
+}
+
+p {
+	font-family: Bradley Hand, cursive;
+	color: white;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: large;
+}
+
+h2 {
+	color: white;
+	font-family: Bradley Hand, cursive;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h3 {
+	color: white;
+	font-family: Bradley Hand, cursive;
+	padding-left: 15%;
+}
+
+table.me {
+	margin-right: auto;
+	margin-left: auto;
+	width: 60%;
+	color: white;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-family: Bradley Hand, cursive;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+ul.hobbies {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	font-family: Bradley Hand, cursive;
+}
+
+#bottom {
+	padding-bottom: 10%;
+}
+
+#phototext {
+	text-align: center;
+	color: white;
+	font-family: Bradley Hand, cursive;
+}
