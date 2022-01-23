@@ -40,5 +40,115 @@
     <div id="phototext">
       <p>Here is my circuit in TinkerCAD</p>
     </div>
+    <video class="center" width="400" controls>
+  <source src="../images/Assignment12.mp4" type="video/mp4">
+</video>
+<div id="phototext">
+      <p>Here is the physical circuit that I wired up and put the code into</p>
+</div>
+  <h2>Here is the code</h2>
+  <div id="bottom">
+  <p>// Processing code
+//
+
+#define SW 2
+#define GRE 13
+#define RED 12
+#define YEL 11
+
+int count = 0; // Initial count value
+int state = HIGH; // Button not pressed
+  
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println("Start");
+  pinMode(SW, INPUT);
+  pinMode(GRE, OUTPUT);
+  pinMode(RED, OUTPUT);
+  pinMode(YEL, OUTPUT);
+  decode(count);
+}
+
+void loop()
+{
+  if(digitalRead(SW) == LOW){
+    // Switch is pressed
+    if (state == HIGH){
+      // Process
+      state = LOW;
+    }
+    else {
+      // do nothing
+    }
+  }
+  else {
+    if (state == LOW){
+      // Registers the keypress
+      count = (count + 1)%6;
+      decode(count);
+      state = HIGH;
+    }
+  }
+}
+
+// Decodes count into binary
+void decode(int v)
+{
+  switch(v){
+    case 0:
+    // LEDs all off
+      digitalWrite(RED, 0);
+      digitalWrite(GRE, 0);
+      digitalWrite(YEL, 0);
+      break;
+    
+    case 1:
+    // Only red LED on
+      digitalWrite(RED, 1);
+      digitalWrite(GRE, 0);
+      digitalWrite(YEL, 0);
+      break;
+    
+    case 2:
+    // Only green LED on
+      digitalWrite(RED, 0);
+      digitalWrite(GRE, 1);
+      digitalWrite(YEL, 0);
+      break;
+    
+    case 3:
+    // Only yellow LED on
+      digitalWrite(RED, 0);
+      digitalWrite(GRE, 0);
+      digitalWrite(YEL, 1);
+      break;
+    
+    case 4:
+    // All LEDs on
+      digitalWrite(RED, 1);
+      digitalWrite(GRE, 1);
+      digitalWrite(YEL, 1);
+      break;
+    
+    case 5:
+    // LEDs flash green then red then yellow
+      digitalWrite(RED, 1);
+      digitalWrite(GRE, 0);
+      digitalWrite(YEL, 0);
+      delay (500);
+      digitalWrite(RED, 0);
+      digitalWrite(GRE, 1);
+      digitalWrite(YEL, 0);
+      delay (500);
+      digitalWrite(RED, 0);
+      digitalWrite(GRE, 0);
+      digitalWrite(YEL, 1);
+      delay (500);
+      break;
+  }
+}
+  </p>
+</div>
 </body>
      </div>
