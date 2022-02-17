@@ -35,13 +35,13 @@
 </div>
   <h2>What does it do?</h2>
   <div id="phototext">
-    <p>This lamp is able to illuminate a room simply by waving your hand across the sensor. It is also able to change colours in the same way.</p>
+    <p>This lamp is able to illuminate a room simply by touching the switch. It is also able to change colours in the same way.</p>
   </div>
     <h2>What are it's features?</h2>
     <div id="space">
     <div id="phototext">
-    <p>- It is able to change colours by waving your hand</p>
-    <p>- An acrylic design that looks like it it being lit up</p>
+    <p>- It is able to change colours by touching the switch</p>
+    <p>- An acrylic design that looks like it is being lit up</p>
   </div>
 </div>
   <h2>What will you make?</h2>
@@ -66,11 +66,11 @@
     </tr>
     <tr>
       <td>Input devices</td>
-      <td>PIR Sensor</td>
+      <td>Touch Switch</td>
     </tr>
     <tr>
       <td>Output devices</td>
-      <td>6 unit Neopixel WS2812 string</td>
+      <td>8 unit Neopixel WS2812 string</td>
     </tr>
   </table>
 </div>
@@ -100,7 +100,7 @@
     <tr>
       <td>3</td>
       <td>1</td>
-      <td>Arduino UNO</td>
+      <td>Arduino UNO/ NANO</td>
       <td>FabLab</td>
     </tr>
     <tr>
@@ -112,7 +112,7 @@
     <tr>
       <td>4</td>
       <td>1</td>
-      <td>PIR Sensor</td>
+      <td>Touch Sensor</td>
        <td>FabLab</td>
     </tr>
     <tr>
@@ -124,11 +124,108 @@
   </table>
 </div>
 </div>
-<h2>Reference</h2>
-<div id="bottom">
-<div id="phototext">
-<p><a href="https://create.arduino.cc/projecthub/Barqunics/origami-lamp-0299d6?ref=search&ref_id=lamp&offset=3">Origami Lamp</p>
-</div>
-</div>
+<h2>Process Of My Final Project</h2>
+<table class="process">
+    <tr>
+      <td><img src="./images/lampsketch.JPG" alt="Lamp Sketch"></td>
+      <td>
+        <p>This is the sketch that I drew of the project that I wanted to do. I measured my components to ensure that the parametric box I designed was able to hold all of it.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="./images/design.JPG" alt="Image"></td>
+      <td>
+        <p>Next, I found an image that I thought would look good on the acrylic part of the lamp. I chose this phoenix that I found on google because I thought that it would look nice when it was lit up.</p>
+      </td>
+    </tr>
+  </table>
+<h2>Acrylic Design</h2>
+<table class="small">
+  <tr>
+    <td><img src="./images/ai1.JPG" alt="Illustrator"></td>
+    <td><img src="./images/ai2.JPG" alt="Illustrator"></td>
+    <td><img src="./images/design2.JPG" alt="Outline"></td>
+  </tr>
+  <tr>
+    <td>I put the google image into Adobe Illustrator so that I could trace the design.</td>
+    <td>I used the image trace option to trace the image then I ungrouped the image and made it so that the shapes were not filled in with colour, leaving me with an outline of the image.</td>
+    <td> Here is the final outline of the image that I will be using for my lamp.</td>
+  </table>
+  <table class="process">
+    <tr>
+      <td><img src="./images/paper.JPG" alt="Prototype"></td>
+      <td>
+        <p>Next, I created a paper prototype of the box with the same dimensions as the one in the my original sketch. By doing this, I was able to ensure that all of my components would fit as well as decide if I liked how it looked. I realised that the box looked too wide and was also not long enough so I changed my dimensions.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><iframe src="https://gmail2097818.autodesk360.com/shares/public/SH35dfcQT936092f0e43b8aed0e10d40b585?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe></td>
+      <td>
+        <p>This is the final box design that I created using Fusion360. The original dimensions of the box from my sketch were 200mm(L) x 150mm(W) x 100mm(H). The new dimensions are 220mm(L) x 130mm(W) x 90mm(H). I had to keep in mind that I would be working with 5mm plywood for the box so I had to ensure that the inside would be able to fit my components. I did this by adding 10mm to the length, width and height of the box.</p>
+      </td>
+    </tr>
+  </table>
+  <h2>Acrylic Design</h2>
+<table class="small">
+  <tr>
+    <td><img src="./images/acrylicsketch1.JPG" alt="Fusion360"></td>
+    <td><img src="./images/acrylicsketch2.JPG" alt="Fusion360"></td>
+  </tr>
+  <tr>
+    <td>I put the image of my outline on a canvas in fusion 360 and traced it to create the shape of the acrylic as well as added a stand to it with a length of 120mm so that it could fit into the hole on the parametric box which is also 120mm(L) x 5mm(W).</td>
+    <td>I then extruded the sketch by 5mm to make sure that it looked right.</td>
+  </table>
+  <h2>Supports</h2>
+  <table class="small">
+  <tr>
+    <td><img src="./images/neopixelsupport.JPG" alt="Support"></td>
+    <td><img src="./images/middlesupport.JPG" alt="Support"></td>
+    <td><img src="./images/acrylicsupport.JPG" alt="Support"></td>
+  </tr>
+  <tr>
+    <td>This support is for the nexopixel and is 175mm(L) x 35mm(W) x 5mm(H). The hole is 165mm(L) x 35mm(W). I will be cutting 2 as my neopixel height is more than 5mm.</td>
+    <td>This support is for the acrylic to rest on so that it does not rest on top of the neopixel. It is 175mm(L) x 35mm(W) x 5mm(H) and the hole is 120mm(L) x 4.5mm(W). I will only be cutting 1.</td>
+    <td>This support is for the acrylic itself. It is 175mm(L) x 35mm(W) x 5mm(H) and the hole is 120mm(L) x 5mm(W) so that the acrylic can slide in and stay in place. I will cut 4 of them to make sure that the acrylic is fully supported and will not fall.</td>
+  </table>
+  <h2>Laser Cutting</h2>
+  <table class="process">
+    <tr>
+      <td><img src="./images/laser1.JPG" alt="Prototype"></td>
+      <td>
+        <p>I arranged all of the dxf files that I had of the parts I wanted lasercut in 5mm wood in corelDRAW and made it hairline. I made sure that I put all of my pieces relatively close together so that I would not waste material. The settings I used for the cutting were originally Speed: 15%, Power: 85% and Frequency: 60%. I had to continuously change the settings to cut the wood because a lot of the pieces would not cut through fully.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="./images/laser2.JPG" alt="Prototype"></td>
+      <td>
+        <p>Next, I arranged the acrylic design in corelDRAW as well as the image for engraving. I set them to hairline then made the part to cut red and made tha part to engrave black. The dxf file of my acrylic had problems but when I made it into a pdf, it worked wonderfully. The settings I used to cut the 5mm acrylic were Speed: 5%, Power: 80% and Frequency: 80%. The settings that I used to engrave the 5mm acrylic were Speeed: 100% and Power:35%. Some of my acrylic was not fully engraved so I porbably should have increased the power a little bit.</p>
+      </td>
+    </tr>
+  </table>
+  <table class="process">
+    <tr>
+      <td><img src="./images/woodpieces.JPG" alt="Wood"></td>
+      <td><img src="./images/acrylicpiece.JPG" alt="Acrylic"></td>
+    </tr>
+    <tr>
+      <td>These are all of the pieces that I laser cut with wood</td>
+      <td>Here is the acrylic piece that I laser cut and engrave</td>
+    </tr>
+  </table>
+  <h2>Lamp And Wiring</h2>
+  <table class="process">
+    <tr>
+      <td><img src="./images/lamp.JPG" alt="Wood"></td>
+      <td>
+        <video width="355" controls>
+  <source src="./images/Neopixel.mp4" type="video/mp4">
+</video>
+</td>
+    </tr>
+    <tr>
+      <td>Here is the how the lamp will look on the outside</td>
+      <td>Here is what will be inside the lamp. It is a neopixel that changes between 8 different colours and has a rainbow cycler at the end. To change the modes, all you have to do is touch the touch switch.</td>
+    </tr>
+  </table>
 </body>
 </html>
