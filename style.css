@@ -65,6 +65,13 @@ ul.nav .dropdown:hover .dropdown-content {
 	font-size: x-large;
 }
 
+#coding {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: x-small;
+}
+
 #welcome {
 	color: #FFFFFF;
 	text-align: center;
